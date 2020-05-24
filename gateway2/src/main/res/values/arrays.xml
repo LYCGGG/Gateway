@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Devices">
+        <item>默认</item>
+        <item>温湿度传感器</item>
+        <item>灯光</item>
+        <item>报警器</item>
+        <item>电量监控</item>
+    </string-array>
+</resources>
