@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/back_list"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/deviceType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设备类型"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/deviceNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设备编号"
+        android:textAlignment="viewStart"
+        android:textColor="#000000" />
+</LinearLayout>
