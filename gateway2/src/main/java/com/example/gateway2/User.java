@@ -140,7 +140,7 @@ public class User extends AppCompatActivity {
 //    private void showDeviceFragment(){
 //        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 //        if(fg_device == null) {
-//            fg_device = Device.newInstance(usernmae,passwd);
+//            fg_device = ShowDevice.newInstance(usernmae,passwd);
 ////            fg_device = new
 //            transaction.add(R.id.frag_container,fg_device);
 //        }

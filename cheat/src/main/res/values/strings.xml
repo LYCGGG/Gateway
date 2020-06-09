@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">gateway</string>
+
+    <string name="test">Light open</string>
+</resources>

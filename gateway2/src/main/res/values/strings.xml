@@ -42,5 +42,9 @@
     <string name="getSNumFail">获取设备序号错误</string>
     <string name="insertDeviceFail">插入数据库失败</string>
     <string name="getDeviceData">获取用户数据</string>
+    <string name="getDataFail">获取设备失败，请检查网络</string>
+    <string name="getDataSuccess">获取设备数据成功</string>
+
+
 
 </resources>

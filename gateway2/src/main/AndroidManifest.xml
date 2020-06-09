@@ -31,6 +31,8 @@
         <activity android:name=".User" />
         <activity android:name=".ChangePwd"/>
         <activity android:name=".AddDevice"/>
+        <activity android:name=".ShowDevice"/>
+        <activity android:name=".DeviceControl.DeviceTemp"/>
     </application>
 
 </manifest>
