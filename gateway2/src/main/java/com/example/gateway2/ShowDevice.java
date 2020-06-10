@@ -35,11 +35,12 @@ public class ShowDevice extends AppCompatActivity {
     private GetBundleData getBundleData;
     private String username;
     private String result;
-    private String[] deviceStr = this.getResources().getStringArray(R.array.deviceType);
+//    private String[] deviceStr = this.getResources().getStringArray(R.array.deviceType);
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.device);
+//        LogUtil.i(deviceStr[1]);
 //        获取当前活动的名称
 //        Log.i("LYC",getClass().getSimpleName());
         //获取控件
@@ -109,16 +110,20 @@ public class ShowDevice extends AppCompatActivity {
                 String value = jsonObject.getString(key);
                 switch (key){
                     case "temp":
-                        DataPrase(value,deviceStr[0]);
+//                        DataPrase(value,deviceStr[0]);
+                        DataPrase(value,"温湿度传感器");
                         break;
                     case "alarm":
-                        DataPrase(value,deviceStr[1]);
+//                        DataPrase(value,deviceStr[1]);
+                        DataPrase(value,"报警器");
                         break;
                     case "light":
-                        DataPrase(value,deviceStr[2]);
+//                        DataPrase(value,deviceStr[2]);
+                        DataPrase(value,"灯光");
                         break;
                     case "socket":
-                        DataPrase(value,deviceStr[3]);
+//                        DataPrase(value,deviceStr[3]);
+                        DataPrase(value,"电量监控");
                         break;
                     default:
                         break;

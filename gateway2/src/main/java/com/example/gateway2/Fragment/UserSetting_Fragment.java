@@ -1,4 +1,4 @@
-package com.example.gateway2;
+package com.example.gateway2.Fragment;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,6 +14,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.gateway2.ChangePwd;
+import com.example.gateway2.Login;
+import com.example.gateway2.R;
 
 
 public class UserSetting_Fragment extends Fragment {
@@ -75,13 +79,13 @@ public class UserSetting_Fragment extends Fragment {
         return string;
     }
     private void logout(){
-        Intent intent = new Intent(getActivity(),Login.class);
+        Intent intent = new Intent(getActivity(), Login.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
     private void changepwd(){
 //        Intent intent = new Intent(getActivity(),ChangePwd.class);
-        Intent intent = new Intent(getActivity(),ChangePwd.class);
+        Intent intent = new Intent(getActivity(), ChangePwd.class);
         Bundle bundle = new Bundle();
         bundle.putString("username",username);
         intent.putExtras(bundle);

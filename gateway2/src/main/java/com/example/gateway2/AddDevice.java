@@ -12,6 +12,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.gateway2.LogUtil.LogUtil;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -29,6 +31,7 @@ public class AddDevice extends AppCompatActivity {
     private EditText deviceSNum;
     private int returnResult;
     private int initResult;
+    private Button cancel;
     int deviceNum = 0;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,13 +40,13 @@ public class AddDevice extends AppCompatActivity {
         Spinner spinner = findViewById(R.id.add_device_spinner);
         Button confirm = findViewById(R.id.confirm);
         deviceSNum = findViewById(R.id.deviceType);
+        cancel = findViewById(R.id.cancel);
         confirm.setOnClickListener(AddDevice_Linstener);
+        cancel.setOnClickListener(AddDevice_Linstener);
         spinner.setOnItemSelectedListener(AddDevice_Spinner_Linstener);
 
         Bundle bundle = this.getIntent().getExtras();
         username = getData(bundle,"username");
-
-
 
     }
 
@@ -80,11 +83,13 @@ public class AddDevice extends AppCompatActivity {
                             AddDevice_Confirm(deviceNum);
                         }
                     }
+                    LogUtil.i("返回activity测试");
                     break;
 //                    AddDevice_Confirm();
                 case R.id.cancel:
 //                    取消添加设备
                     finish();
+                    LogUtil.i("返回activity测试");
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + view.getId());

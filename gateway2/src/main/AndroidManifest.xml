@@ -33,6 +33,9 @@
         <activity android:name=".AddDevice"/>
         <activity android:name=".ShowDevice"/>
         <activity android:name=".DeviceControl.DeviceTemp"/>
+        <activity android:name=".DeviceControl.DeviceLight"/>
+        <activity android:name=".DeviceControl.DeviceAlarm"/>
+        <activity android:name=".DeviceControl.DeviceSocket"/>
     </application>
 
 </manifest>

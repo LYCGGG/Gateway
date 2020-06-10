@@ -1,19 +1,17 @@
 package com.example.gateway2;
 
-import android.app.Activity;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.bluetooth.BluetoothClass;
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.example.gateway2.Fragment.Device_Fragment;
+import com.example.gateway2.Fragment.Gateway_Fragment;
+import com.example.gateway2.Fragment.UserSetting_Fragment;
 
 public class User extends AppCompatActivity {
     private String usernmae;

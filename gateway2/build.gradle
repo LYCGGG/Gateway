@@ -14,7 +14,6 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-
     buildTypes {
         release {
             minifyEnabled false
@@ -22,6 +21,19 @@ android {
         }
     }
 
+    sourceSets {
+        main{
+            [
+                    res.srcDirs = [
+                            'src/main/res/layouts/mainLayouts',
+                            'src/main/res/layouts/deviceLayouts',
+                            'src/main/res/layouts/deviceFragment',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+            ]
+        }
+    }
 
 }
 

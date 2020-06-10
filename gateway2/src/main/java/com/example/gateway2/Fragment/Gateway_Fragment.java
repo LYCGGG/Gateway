@@ -1,4 +1,4 @@
-package com.example.gateway2;
+package com.example.gateway2.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,9 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.gateway2.AddDevice;
+import com.example.gateway2.R;
 
 
 public class Gateway_Fragment extends Fragment {
@@ -33,7 +36,7 @@ public class Gateway_Fragment extends Fragment {
         String username = getData(bundle,"username");
         Bundle bundle1 = new Bundle();
         bundle1.putString("username",username);
-        Intent intent = new Intent(getActivity(),AddDevice.class);
+        Intent intent = new Intent(getActivity(), AddDevice.class);
         intent.putExtras(bundle1);
         startActivity(intent);
     }

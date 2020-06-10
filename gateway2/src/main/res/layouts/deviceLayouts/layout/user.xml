@@ -6,7 +6,7 @@
 
 <!--    <fragment-->
 <!--        android:id="@+id/fragment"-->
-<!--        android:name="com.example.gateway2.UserSetting_Fragment"-->
+<!--        android:name="com.example.gateway2.Fragment.UserSetting_Fragment"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="0dp"-->
 <!--        android:layout_weight="1"-->
