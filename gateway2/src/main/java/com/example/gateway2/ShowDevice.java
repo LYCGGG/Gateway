@@ -52,8 +52,6 @@ public class ShowDevice extends AppCompatActivity {
 //        发送网络请求获取数据
         getData();
 
-
-
     }
 
     private void getData() {
@@ -72,7 +70,7 @@ public class ShowDevice extends AppCompatActivity {
 //                            deviceList.setLayoutManager(linearLayoutManager);
                             // 创建StaggeredGridLayoutManager实例,通过设置其中参数设置显示布局显示方式
 //                            交错式布局管理器
-//                            此处没有采用回调函数的方式实现多线程之间的矛盾处理,而是在子线程完成之后采取下一步动作
+//                            此处没有采用回调函数的方式实现多线程之间的矛盾处理,而是借助于回调接口在子线程完成之后采取下一步动作
                             StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
                             deviceList.setLayoutManager(layoutManager);
                             deviceAdapter = new DeviceAdapter(ShowDevice.this,list,bundle);

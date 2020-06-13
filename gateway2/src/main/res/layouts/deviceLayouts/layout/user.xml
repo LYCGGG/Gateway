@@ -33,7 +33,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/gateway_setting" />
+            android:text="@string/gateway_setting"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/devicesetting"
@@ -41,14 +42,16 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/device_setting" />
+            android:text="@string/device_setting"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/usersetting"
-            android:layout_width="wrap_content"
             style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:lineSpacingExtra="18sp"
             android:text="@string/user_setting" />
     </LinearLayout>
 

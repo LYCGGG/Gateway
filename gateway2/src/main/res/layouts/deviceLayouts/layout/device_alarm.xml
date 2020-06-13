@@ -33,7 +33,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
